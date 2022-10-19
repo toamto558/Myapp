@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘의 날씨</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=bb9a19ab12ab00b80f8fbbbef995cc92"></script>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bb9a19ab12ab00b80f8fbbbef995cc92"></script>
     <style>
         *{margin:0; padding:0}
         body{
@@ -142,7 +142,7 @@
             var todayWeater = data.name + " " + 
                               data.weather[0].main + 
                               " 온도 : " + data.main.temp + "℃" + 
-                              `<img src='http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>`;
+                              `<img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>`;
 
             var todaytime = new Date(data.dt*1000);
             
@@ -154,7 +154,7 @@
             $(".name").html(data.name); //도시이름
             $(".todayWeater").html(data.weather[0].main);
             $(".temperature").html("온도 : "+data.main.temp+ "℃");
-            $(".icon").html( `<img src='http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>`);
+            $(".icon").html( `<img src='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'>`);
 
         }
         var container = document.getElementById('map');
